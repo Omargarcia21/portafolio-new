@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --fondo-principal: #0a192f;
+    --texto: #e6f1ff;
+    --color-secundario: #64ffda;
+    --color-de-acento: #ff9500;
+    --font-title: 'Montserrat', sans-serif;
+    --font-body: 'Inter', monospace;
+}
+@media screen and (min-width: 640px){
+    .contact__links {
+        position: inherit;
+        bottom: -17px;
+    }
+}
+@media screen and (min-width: 768px) {
+    /******************* Menu ***************************/
+    .navbar__list{
+        display: flex;
+        gap: 1rem;
+        margin-top: 15px;
+    }
+    .navbar__link {
+        color: var(--fondo-principal);
+        font-size: 1.1rem;
+        font-family: var(--font-title);
+        letter-spacing: 1px;
+        text-decoration: none;
+        padding: 0.5rem;
+        transition: color 0.3s ease;
+    }
+    .navbar__link:hover,
+    .lenguaje:hover {
+        color: var(--color-de-acento);
+    }
+    .navbar__mobile{
+        display: none;
+    }
+    /************ Seccion principal *******************************/
+    .hero__section {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .hero__info{
+        align-items: center;
+        justify-content: center;
+    }
+    .hero__info h1{
+        font-size: 1.7rem;
+        text-align: left;
+    }
+    .hero__buttons{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn{
+        width: 130px;
+        height: 50px;
+    }
+    .hero__image{
+        align-items: center;
+        text-align: center;
+        width: 300px;
+        margin-top: 350px;
+    }
+    /*************** Seccion footer ************************/
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 820px){
+    .hero__image{
+        margin-top: 200px;
+    }
+}
+@media screen and (min-width: 998px){
+    .hero__section{
+        gap: 10rem;
+    }
+    .hero__image{
+        margin-top: 200px;
+    }
+}
+@media screen and (min-width: 1440px) {
+     /************ Seccion principal *******************************/
+    
+    .hero__section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero__info h1 {
+        font-size: 3.5rem;
+    }
+    .hero__info p {
+        font-size: 1.4rem;
+    }
+    .btn{
+        width: 300px;
+        height: 50px;
+    }
+    .hero__image {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .about__container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .btn-cv {
+        font-family: var(--font-body);
+        display: inline-block;
+        width: 300px;
+        height: 50px;
+        padding: 1rem;
+        background: var(--color-de-acento);
+        color: var(--fondo-principal);
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background 0.3s;
+        border: none;
+        text-align: center;
+        margin-left: 150px;
+    }
+}

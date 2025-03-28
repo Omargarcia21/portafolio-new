@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Portafolio | Omar Garcia</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="#" class="logo__icon">Omar</a>
+        </div>
+        <ul class="navbar__list" id="nav-list">
+            <li><a href="./about.html" class="navbar__link">Sobre mi</a></li>
+            <li><a href="#projects" class="navbar__link">Proyectos</a></li>
+            <li><a href="#contact" class="navbar__link">Contacto</a></li>
+        </ul>
+        <div class="navbar__mobile" id="menu-btn">
+            <i class='bx bx-menu '></i> <!--bx-tada -->
+        </div>
+    </nav>
+    <!--Hero section-->
+    <section class="hero__section section" id="inicio">
+        <article class="hero__info">
+            <h1>Hola, Soy Omar!</h1>
+            <p>Desarrollador fullstack Java, enfocado en la parte del backend</p>
+            <div class="hero__buttons">
+                <a href="https://github.com/Omargarcia21" target="_blank" class="btn">
+                    <i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/omar-garcia-programador/" target="_blank" class="btn">
+                    <i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+        </article>
+        <div class="hero__image">
+            <img src="./assets/undraw_in-the-office_e7pg.svg" alt="">
+        </div>
+    </section>
+    <!-- Proyectos Section-->
+    <section class="project__section" id="projects">
+        <h1>Proyectos Relevates</h1>
+        <article class="projects__grid">
+            <div class="projects">
+                <div class="project__card">
+                    <div class="project__img">
+                        <img src="./assets/Bilioteca-proyect.png" alt="">
+                    </div>
+                    <div class="project__info">
+                        <span class="project__title">Biblioteca</span>
+                        <p>Esta aplicación de gestión de bibliotecas permite realizar operaciones CRUD sobre Usuarios, Libros, Autores y Bibliotecas. Ofrece una interfaz web atractiva, seguridad con Spring Security y pruebas unitarias para garantizar su calidad.</p>
+                    </div>
+                    <div class="project__tecnologies">
+                        <i class='bx bxl-java' ></i>
+                        <i class='bx bxl-spring-boot' ></i>
+                    </div>
+                    <div class="project__buttons">
+                        <a href="https://github.com/Omargarcia21/proyecto-biblioteca" target="_blank">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="project__card">
+                    <div class="project__img">
+                        <img src="./assets/Cafeteria-Proyect.png" alt="">
+                    </div>
+                    <div class="project__info">
+                        <span class="project__title">Cafeteria</span>
+                        <p>Página web responsiva para una cafetería con menú, reseñas, galería e información de contacto, usando HTML, CSS, JavaScript y Swiper para el carrusel.</p>
+                    </div>
+                    <div class="project__tecnologies">
+                        <i class='bx bxl-html5'></i>
+                        <i class='bx bxl-css3' ></i>
+                        <i class='bx bxl-javascript' ></i>
+                    </div>
+                    <div class="project__buttons">
+                        <a href="  https://omargarcia21.github.io/cafeteria/" target="_blank">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="project__card">
+                    <div class="project__img">
+                        <img src="./assets/pizzeria-proyect.png" alt="">
+                    </div>
+                    <div class="project__info">
+                        <span class="project__title">Pizzeria</span>
+                        <p>Sitio web interactivo para una pizzería con animaciones y efectos visuales que mejoran la experiencia del usuario.</p>
+                    </div>
+                    <div class="project__tecnologies">
+                        <i class='bx bxl-html5'></i>
+                        <i class='bx bxl-css3' ></i>
+                        <i class='bx bxl-javascript' ></i>
+                    </div>
+                    <div class="project__buttons">
+                        <a href="https://omargarcia21.github.io/pizzeria/">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--Seccion de contacto-->
+    <section class="contact__section" id="contact">
+        <h2>Hablemos <i class='bx bx-happy bx-tada' ></i> </h2>
+        <article class="contact__banner">
+            <div class="contact__info">
+                <p>Si necesitas ayuda con un sitio web o una aplicación, no dudes en contactarme</p>
+            </div>
+            <div class="contact__links">
+                <a href="#" onclick="copyToClipboard('Omar.garcia.21@hotmail.com')" title="Copiar correo">
+                    <i class='bx bx-envelope bx-tada'> Omar.garcia.21@hotmail.com</i>
+                </a>
+                <a href="#" onclick="copyToClipboard('81 8014 7117')" title="Copiar teléfono">
+                    <i class='bx bxs-phone bx-tada' > 81 8014 7117</i>
+                </a>
+                <div id="copy-msg" class="copy-msg">¡Copiado al portapapeles!</div>
+            </div>
+        </article>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            
+            <div class="footer__brand">
+                <h3>Omar García</h3>
+                <p>Desarrollador Fullstack Java enfocado en el Backend</p>
+            </div>
+            
+            <div class="footer__links">
+                <ul>
+                    <li><a target="" href="#inicio">Inicio</a></li>
+                    <li><a href="./about.html">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer__social">
+                <h4>Redes sociales</h4>
+                <div class="footer__social-links">
+                    <a href="https://www.linkedin.com/in/omar-garcia-programador/" target="_blank">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                    <a href="https://github.com/Omargarcia21" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="footer__bottom">
+            <p> 2025 Omar García.</p>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
